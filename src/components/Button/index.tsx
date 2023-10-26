@@ -6,23 +6,31 @@ const buttonVariant = cva(['w-full sm:w-fit','rounded-lg '],{
     variants:{
         variant:{
             standard:[
-                'bg-primary-700 text-white',
-                'hover:bg-primary-100 hover:text-white',
-                'disabled:bg-primary-300 disabled:text-primary-900',
+                'bg-primary-700 text-white rounded-3xl',
+                'hover:bg-primary-100 hover:text-white rounded-3xl',
             ],
             reject:[
-                'bg-red-100 text-white',
-                'hover:sm-red-300 hover:text-darkWhite-100',
+                'bg-red-100 text-white rounded-full',
+                'hover:bg-red-300 hover:text-darkWhite-100 rounded-full',
             ],
             accept: [
-                "bg-blue-100 text-white",
-                "hover:sm-blue-300 hover:text-darkWhite-100",
-            ]
+                "bg-blue-100 text-white rounded-full",
+                "hover:bg-blue-300 hover:text-darkWhite-100 rounded-full",
+            ],
+            text: [
+                "textButton text-blue-700",
+                "hover: textButton hover:text-blue-900 hover:font-bold",
+            ],
+            send:[
+                "bg-blue-200 rounded-full h-10 w-10 flex items-center justify-center",
+                "hover: bg-blue-800 hover:rounded-full hover:h-10  hover:w-10 hover:flex hover:items-center hover:justify-center",
+            ],
         },
         size:{
-            small:['px-4 py-2 text-xs'],
+            tiny: ['px-1 py-1 text-xs'],
+            small:['px-5 py-1 text-xs'],
             medium:['px-4 py-3 text-sm'],
-            large:['px-4 py-3 text-base'],
+            large:['px-12 py-1 text-base'],
         }
     },
     defaultVariants:{
