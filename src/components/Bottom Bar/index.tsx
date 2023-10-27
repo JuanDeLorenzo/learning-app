@@ -1,0 +1,31 @@
+import React, {ReactNode} from 'react'
+import {cva, VariantProps} from "class-variance-authority";
+
+const barVariant = cva(['w-full sm:w-fit','rounded-lg '],{
+    variants:{
+        variant:{
+            homeSelected:[
+                'bg-white-200 px-4 py-2 text-primary-800 flex justify-between text-xs',
+            ],
+            coursesSelected:[
+                'bg-white-200 px-4 py-2 text-primary-800 flex justify-between text-xs',
+            ],
+            messagesSelected: [
+                'bg-white-200 px-4 py-2 text-primary-800 flex justify-between text-xs',
+            ],
+        }
+    },
+    defaultVariants:{
+        variant:'homeSelected',
+    }
+})
+
+export interface BarProps extends VariantProps<typeof barVariant> {
+    children?: ReactNode;
+}
+
+const BottomBar = ({variant, ...rest}:BarProps) => {
+    return <div className={barVariant({variant})} {...rest}/>
+}
+
+export default BottomBar

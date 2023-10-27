@@ -1,6 +1,9 @@
 import {Meta, StoryObj} from "@storybook/react";
 import Button from "./index";
 import SendIcon from '@mui/icons-material/Send';
+import React from "react";
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowBackIosNewRoundedIcon from '@mui/icons-material/ArrowBackIosNewRounded';
 
 const meta: Meta<typeof Button> ={
     title:'Button',
@@ -8,7 +11,7 @@ const meta: Meta<typeof Button> ={
     tags: ['autodocs'],
     argTypes:{
         variant:{
-            options:['standard','reject','accept', 'text', 'send'],
+            options:['standard','reject','accept', 'text', 'send', 'back'],
             control:{type:'select'},
             defaultValue:'standard'
         },
@@ -48,5 +51,26 @@ export const Text: Story = {
 
 export const Send: Story = {
     name:'Send',
-    render: (args) => <Button variant={'send'} size={'tiny'}{...args}><SendIcon/></Button>
+    render: (args) => <Button variant={'send'} size={'tiny'}{...args}><SendIcon style={{
+        color: 'white',
+    }}
+    /></Button>
 }
+
+export const Back: Story = {
+    name:'Back',
+    render: (args) => <Button variant={'back'} size={'medium'}{...args}> <HoverableIcon /></Button>
+}
+
+const HoverableIcon = () => {
+    const [isHovered, setIsHovered] = React.useState(false);
+
+    return (
+        <div
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+        >
+            {isHovered ? <ArrowBackIosNewRoundedIcon /> : <ArrowBackIosNewIcon />}
+        </div>
+    );
+};

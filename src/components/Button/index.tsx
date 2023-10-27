@@ -11,11 +11,11 @@ const buttonVariant = cva(['w-full sm:w-fit','rounded-lg '],{
             ],
             reject:[
                 'bg-red-100 text-white rounded-full',
-                'hover:bg-red-300 hover:text-darkWhite-100 rounded-full',
+                'hover:bg-red-300 hover:text-white-100 rounded-full',
             ],
             accept: [
                 "bg-blue-100 text-white rounded-full",
-                "hover:bg-blue-300 hover:text-darkWhite-100 rounded-full",
+                "hover:bg-blue-300 hover:text-white-100 rounded-full",
             ],
             text: [
                 "textButton text-blue-700",
@@ -25,12 +25,16 @@ const buttonVariant = cva(['w-full sm:w-fit','rounded-lg '],{
                 "bg-blue-200 rounded-full h-10 w-10 flex items-center justify-center",
                 "hover: bg-blue-800 hover:rounded-full hover:h-10  hover:w-10 hover:flex hover:items-center hover:justify-center",
             ],
+            back:[
+                "textButton justify-center",
+                "hover: textButton hover:justify-center hover:outline-black",
+            ],
         },
         size:{
             tiny: ['px-1 py-1 text-xs'],
             small:['px-5 py-1 text-xs'],
             medium:['px-4 py-3 text-sm'],
-            large:['px-12 py-1 text-base'],
+            large:['px-12 py-1 text-lg'],
         }
     },
     defaultVariants:{
@@ -49,16 +53,16 @@ const Button = ({variant,size, ...rest}:ButtonProps) => {
 
 
 // interface ButtonProps {
-//     variant?: 'outlined' | 'fulfilled' | 'ghost' | 'white'
-//     size?: string
-//     children: ReactNode
-// }
-//
-// const disabled = 'disabled:bg-grey-300 disabled:text-grey-700'
-//
-// const Button = ({variant,size='medium',children}:ButtonProps) => {
-// return(<button className={'bg-primary-500 text-grey-700 py-3 px-4 rounded-lg hover:bg-blue-500 disabled:bg-green-300 ' + disabled}>{
-//     children
-// }</button>)
-// }
+// //     variant?: 'outlined' | 'fulfilled' | 'ghost' | 'white'
+// //     size?: string
+// //     children: ReactNode
+// // }
+// //
+// // const disabled = 'disabled:bg-grey-300 disabled:text-grey-700'
+// //
+// // const Button = ({variant,size='medium',children}:ButtonProps) => {
+// // return(<button className={'bg-primary-500 text-grey-700 py-3 px-4 rounded-lg hover:bg-blue-500 disabled:bg-green-300 ' + disabled}>{
+// //     children
+// // }</button>)
+// // }
 export default Button
