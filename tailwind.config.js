@@ -30,6 +30,12 @@ module.exports = {
         white:{
           100: '#ACACAC',
           200: '#F7F7F7',
+          300: '#F2F6F5',
+            400: '#AEAEAE',
+        },
+        black:{
+            100: '#2E2A2A',
+            200: '#394247'
         }},
     },
     fontSize:{
