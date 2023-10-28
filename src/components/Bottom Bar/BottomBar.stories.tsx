@@ -15,7 +15,7 @@ const meta: Meta<typeof BottomBar> ={
     tags: ['autodocs'],
     argTypes:{
         variant:{
-            options:['homeSelected','coursesSelected','messagesSelected'],
+            options:['classic'],
             control:{type:'select'},
             defaultValue:'homeSelected'
         }
@@ -33,8 +33,8 @@ export const Default: Story = {
 
 export const HomeSelected: Story = {
     name:'Home Selected',
-    render: (args) => <BottomBar variant={'messagesSelected'} {...args}>
-        <div className="flex flex-col items-center px-4">
+    render: (args) => <BottomBar variant={'classic'} {...args}>
+        <div className="flex flex-col items-center px-4 text-small">
             <IconButton className="text-3xl">
                 <HomeTwoToneIcon style={{
                     fontSize: 36
@@ -42,7 +42,7 @@ export const HomeSelected: Story = {
             </IconButton>
             Home
         </div>
-        <div className="flex flex-col items-center px-10">
+        <div className="flex flex-col items-center px-10 text-small">
             <IconButton className="text-3xl">
                 <FeedOutlinedIcon style={{
                     fontSize: 36
@@ -50,7 +50,7 @@ export const HomeSelected: Story = {
             </IconButton>
             Courses
         </div>
-        <div className="flex flex-col items-center px-4">
+        <div className="flex flex-col items-center px-4 text-small">
             <IconButton>
                 <MessageOutlinedIcon style={{
                     fontSize: 36
@@ -62,8 +62,8 @@ export const HomeSelected: Story = {
 }
 export const CoursesSelected: Story = {
     name:'Courses Selected',
-    render: (args) => <BottomBar variant={'messagesSelected'} {...args}>
-        <div className="flex flex-col items-center px-4">
+    render: (args) => <BottomBar variant={'classic'} {...args}>
+        <div className="flex flex-col items-center px-4 text-small">
             <IconButton className="text-3xl">
                 <HomeOutlinedIcon style={{
                     fontSize: 36
@@ -71,7 +71,7 @@ export const CoursesSelected: Story = {
             </IconButton>
             Home
         </div>
-        <div className="flex flex-col items-center px-10">
+        <div className="flex flex-col items-center px-10 text-small">
             <IconButton className="text-3xl">
                 <FeedTwoToneIcon style={{
                     fontSize: 36
@@ -79,7 +79,7 @@ export const CoursesSelected: Story = {
             </IconButton>
             Courses
         </div>
-        <div className="flex flex-col items-center px-4">
+        <div className="flex flex-col items-center px-4 text-small">
             <IconButton>
                 <MessageOutlinedIcon style={{
                     fontSize: 36
@@ -91,8 +91,8 @@ export const CoursesSelected: Story = {
 }
 export const MessagesSelected: Story = {
     name:'Messages Selected',
-    render: (args) => <BottomBar variant={'messagesSelected'} {...args}>
-        <div className="flex flex-col items-center px-4">
+    render: (args) => <BottomBar variant={'classic'} {...args}>
+        <div className="flex flex-col items-center px-4 text-small">
             <IconButton className="text-3xl">
                 <HomeOutlinedIcon style={{
                     fontSize: 36
@@ -100,7 +100,7 @@ export const MessagesSelected: Story = {
             </IconButton>
             Home
         </div>
-        <div className="flex flex-col items-center px-10">
+        <div className="flex flex-col items-center px-10 text-small">
             <IconButton className="text-3xl">
                 <FeedOutlinedIcon style={{
                     fontSize: 36
@@ -108,7 +108,7 @@ export const MessagesSelected: Story = {
             </IconButton>
             Courses
         </div>
-        <div className="flex flex-col items-center px-4">
+        <div className="flex flex-col items-center px-4 text-small">
             <IconButton>
                 <MessageTwoToneIcon style={{
                     fontSize: 36

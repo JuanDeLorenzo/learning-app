@@ -56,10 +56,10 @@ export const SmallBlock: Story = {
     name:'Small Course Block',
     render: (args) => <Block variant={'small'} {...args}>
         <div className='flex flex-col items-center'>
-            <img src={cooking} alt="Descripción de la imagen" className="w-40  object-top h-20 rounded-lg"/>
+            <img src={cooking} alt="Descripción de la imagen" className="w-32  object-top h-20 rounded-lg"/>
         </div>
         <div className='text-left mt-auto px-1 py-1'>
-            <span className='px-1'> Cooking Lessons </span><br/>
+            <span> Cooking Lessons </span><br/>
         </div>
     </Block>
 }

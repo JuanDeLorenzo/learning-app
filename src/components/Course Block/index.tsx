@@ -9,7 +9,7 @@ const blockVariant = cva(['w-full sm:w-fit','rounded-lg '],{
                 'hover:bg-black-100 hover:text-white-100'
             ],
             small:[
-                'bg-primary-700 text-white-300 text-medium rounded-lg',
+                'bg-primary-700 text-white-300 text-medium rounded-lg max-w-xs',
                 'hover:bg-black-100 hover:text-white-100'
             ],
             big: [
@@ -17,7 +17,7 @@ const blockVariant = cva(['w-full sm:w-fit','rounded-lg '],{
                 'hover:bg-white-400'
             ],
             search: [
-                'bg-primary-700 text-white-300 h-30 w-56 text-medium rounded flex items-center',
+                'bg-primary-700 text-white-300 h-30 text-medium rounded flex items-center',
                 'hover:bg-black-100 hover:text-white-100'
             ]
         }

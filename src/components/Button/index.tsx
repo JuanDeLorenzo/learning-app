@@ -22,8 +22,8 @@ const buttonVariant = cva(['w-full sm:w-fit','rounded-lg '],{
                 "hover: textButton hover:text-blue-900 hover:font-bold",
             ],
             send:[
-                "bg-blue-200 rounded-full h-10 w-10 flex items-center justify-center",
-                "hover: bg-blue-800 hover:rounded-full hover:h-10  hover:w-10 hover:flex hover:items-center hover:justify-center",
+                "bg-blue-200 rounded-full h-10 w-10",
+                "hover:bg-blue-800 hover:rounded-full hover:h-10 hover:w-10",
             ],
             back:[
                 "textButton justify-center",

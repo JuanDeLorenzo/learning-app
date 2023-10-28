@@ -4,19 +4,13 @@ import {cva, VariantProps} from "class-variance-authority";
 const barVariant = cva(['w-full sm:w-fit','rounded-lg '],{
     variants:{
         variant:{
-            homeSelected:[
-                'bg-white-200 px-4 py-2 text-primary-800 flex justify-between text-xs',
-            ],
-            coursesSelected:[
-                'bg-white-200 px-4 py-2 text-primary-800 flex justify-between text-xs',
-            ],
-            messagesSelected: [
-                'bg-white-200 px-4 py-2 text-primary-800 flex justify-between text-xs',
+            classic:[
+                'bg-white-200 px-4 py-2 text-primary-800 flex justify-between',
             ],
         }
     },
     defaultVariants:{
-        variant:'homeSelected',
+        variant:'classic',
     }
 })
 
