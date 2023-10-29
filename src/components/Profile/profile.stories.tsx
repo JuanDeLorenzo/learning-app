@@ -33,14 +33,12 @@ export const Default: Story = {
 export const Notification: Story = {
     name:'With Notification',
     render: (args) => <Profile {...args}>
-        <div className="relative group">
-            <div className="rounded-full overflow-hidden w-24 h-24 border-4 border-white">
-                <img src={profile} alt="User" className="w-full h-full object-cover" />
-            </div>
-            <div className="absolute top-1/2 right-1/4 transform translate-y-3/4 -mr-8 w-6 h-6 rounded-full bg-red-600 flex items-center justify-center transition text-white-300 z-40 shadow-md group-hover:bg-red-800">
-                1
-            </div>
-            <p className="mt-2 text-center w-24">Nazaret Lopez Gabeiras</p>
+        <div className="rounded-full overflow-hidden w-24 h-24 border-4 border-white">
+            <img src={profile} alt="User" className="w-full h-full object-cover" />
         </div>
+        <div className="absolute top-1/2 right-1/4 transform translate-y-3/4 -mr-8 w-6 h-6 rounded-full bg-red-600 flex items-center justify-center transition text-white-300 z-40 shadow-md group-hover:bg-red-800">
+            1
+        </div>
+        <p className="mt-2 text-center w-24">Nazaret Lopez Gabeiras</p>
     </Profile>
 }

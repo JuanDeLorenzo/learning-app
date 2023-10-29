@@ -70,9 +70,9 @@ export const BigBlock: Story = {
         <div className="w-1/2 flex flex-col justify-center">
             <span className="text-center">Cooking Course</span>
             <br/>
-            <span className="text-right text-small pr-2">0%</span>
-            <div className="h-1 bg-gray-300 w-1/3 bottom-0 absolute left-1/4 transform -translate-x-1/2 -translate-y-4 rounded"></div>
-
+            <span className="text-right text-small pr-2">40%</span>
+            <div className="h-1 bg-gray-300 w-1/3 bottom-0 absolute left-1/4 transform -translate-x-1/2 -translate-y-4 rounded group-hover:bg-gray-700"></div>
+            <div className="h-1 bg-green-100 w-1/6 bottom-0 absolute left-1/4 transform -translate-x-full -translate-y-4 rounded group-hover:bg-green-200"></div>
         </div>
         <span className="w-1/2  flex">
             <img src={cooking} alt="Imagen" className="max-h-40 max-w-36 rounded"/>

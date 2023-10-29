@@ -13,7 +13,7 @@ const blockVariant = cva(['w-full sm:w-fit','rounded-lg '],{
                 'hover:bg-black-100 hover:text-white-100'
             ],
             big: [
-                'bg-white-300 text-black-200 h-30 w-56 rounded flex items-center relative',
+                'bg-white-300 text-black-200 h-30 w-56 rounded flex items-center relative group',
                 'hover:bg-white-400'
             ],
             search: [
