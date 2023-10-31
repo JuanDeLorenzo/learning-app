@@ -5,7 +5,7 @@ const searchVariant = cva(['w-full sm:w-fit','rounded-lg '],{
     variants:{
         variant:{
             standard:[
-                'bg-white-300 rounded-full h-10 max-w-20 border-opacity-0',
+                'bg-white-300 rounded-full h-10 max-w-20 border-opacity-0 px-2',
             ]
         }
     },
@@ -22,6 +22,7 @@ const Search = ({variant,...rest}:SearchProps) => {
     return <input
         type="text"
         placeholder="Search..."
+        className={searchVariant({variant})} {...rest}
     />
 }
 

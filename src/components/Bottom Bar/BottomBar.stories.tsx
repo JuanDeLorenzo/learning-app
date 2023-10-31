@@ -1,13 +1,14 @@
 import {Meta, StoryObj} from "@storybook/react";
 import BottomBar from "./index";
-import HomeTwoToneIcon from '@mui/icons-material/HomeTwoTone';
-import FeedTwoToneIcon from '@mui/icons-material/FeedTwoTone';
-import MessageTwoToneIcon from '@mui/icons-material/MessageTwoTone';
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import FeedOutlinedIcon from '@mui/icons-material/FeedOutlined';
-import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
+import home from"./Images/Home.png"
+import homeBlack from"./Images/HomeSelected.png"
+import courses from"./Images/Courses.png"
+import coursesBlack from"./Images/CoursesSelected.png"
+import messages from"./Images/Messages.png"
+import messagesBlack from"./Images/MessagesSelected.png"
 import React from "react";
 import {IconButton} from "@mui/material";
+import darkPen from "../Category/Images/Dark Pen.png";
 
 const meta: Meta<typeof BottomBar> ={
     title:'Bottom Bar',
@@ -35,28 +36,22 @@ export const HomeSelected: Story = {
     name:'Home Selected',
     render: (args) => <BottomBar variant={'classic'} {...args}>
         <div className="flex flex-col items-center px-4 text-small">
-            <IconButton className="text-3xl">
-                <HomeTwoToneIcon style={{
-                    fontSize: 36
-                }}/>
-            </IconButton>
-            Home
+            <button className="text-3xl">
+                <img src={homeBlack} alt="Square Button" className="w-12 h-12" />
+                Home
+            </button>
         </div>
         <div className="flex flex-col items-center px-10 text-small">
-            <IconButton className="text-3xl">
-                <FeedOutlinedIcon style={{
-                    fontSize: 36
-                }}/>
-            </IconButton>
-            Courses
+            <button className="text-3xl">
+                <img src={courses} alt="Square Button" className="w-12 h-12" />
+                Courses
+            </button>
         </div>
         <div className="flex flex-col items-center px-4 text-small">
-            <IconButton>
-                <MessageOutlinedIcon style={{
-                    fontSize: 36
-                }}/>
-            </IconButton>
-            Messages
+            <button>
+                <img src={messages} alt="Square Button" className="w-12 h-12" />
+                Messages
+            </button>
         </div>
     </BottomBar>
 }
@@ -64,28 +59,22 @@ export const CoursesSelected: Story = {
     name:'Courses Selected',
     render: (args) => <BottomBar variant={'classic'} {...args}>
         <div className="flex flex-col items-center px-4 text-small">
-            <IconButton className="text-3xl">
-                <HomeOutlinedIcon style={{
-                    fontSize: 36
-                }}/>
-            </IconButton>
-            Home
+            <button className="text-3xl">
+                <img src={home} alt="Square Button" className="w-12 h-12" />
+                Home
+            </button>
         </div>
         <div className="flex flex-col items-center px-10 text-small">
-            <IconButton className="text-3xl">
-                <FeedTwoToneIcon style={{
-                    fontSize: 36
-                }}/>
-            </IconButton>
-            Courses
+            <button className="text-3xl">
+                <img src={coursesBlack} alt="Square Button" className="w-12 h-12" />
+                Courses
+            </button>
         </div>
         <div className="flex flex-col items-center px-4 text-small">
-            <IconButton>
-                <MessageOutlinedIcon style={{
-                    fontSize: 36
-                }}/>
-            </IconButton>
-            Messages
+            <button>
+                <img src={messages} alt="Square Button" className="w-12 h-12" />
+                Messages
+            </button>
         </div>
     </BottomBar>
 }
@@ -93,28 +82,22 @@ export const MessagesSelected: Story = {
     name:'Messages Selected',
     render: (args) => <BottomBar variant={'classic'} {...args}>
         <div className="flex flex-col items-center px-4 text-small">
-            <IconButton className="text-3xl">
-                <HomeOutlinedIcon style={{
-                    fontSize: 36
-                }}/>
-            </IconButton>
-            Home
+            <button className="text-3xl">
+                <img src={home} alt="Square Button" className="w-12 h-12" />
+                Home
+            </button>
         </div>
         <div className="flex flex-col items-center px-10 text-small">
-            <IconButton className="text-3xl">
-                <FeedOutlinedIcon style={{
-                    fontSize: 36
-                }}/>
-            </IconButton>
-            Courses
+            <button className="text-3xl">
+                <img src={courses} alt="Square Button" className="w-12 h-12" />
+                Courses
+            </button>
         </div>
         <div className="flex flex-col items-center px-4 text-small">
-            <IconButton>
-                <MessageTwoToneIcon style={{
-                    fontSize: 36
-                }}/>
-            </IconButton>
-            Messages
+            <button>
+                <img src={messagesBlack} alt="Square Button" className="w-12 h-12" />
+                Messages
+            </button>
         </div>
     </BottomBar>
 }
