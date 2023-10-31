@@ -2,11 +2,11 @@ import React, {ReactNode,ButtonHTMLAttributes} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 
 
-const categoryVariant = cva(['w-full sm:w-fit','rounded-lg '],{
+const categoryVariant = cva(['rounded-lg '],{
     variants:{
         variant:{
             standard:[
-                'bg-primary-200 relative text-black-900 rounded-full h-24 rounded-lg flex flex-col items-center text-large',
+                'bg-primary-200 relative text-black-900 rounded-full h-24 w-24 rounded-lg flex flex-col items-center text-large',
                 'hover:bg-primary-400',
             ]
         }

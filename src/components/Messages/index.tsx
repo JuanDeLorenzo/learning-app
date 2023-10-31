@@ -2,7 +2,7 @@ import React, {ReactNode,ButtonHTMLAttributes} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 
 
-const messageVariant = cva(['w-full sm:w-fit','rounded-lg '],{
+const messageVariant = cva(['w-36 sm:w-fit','rounded-lg '],{
     variants:{
         variant:{
             user:[

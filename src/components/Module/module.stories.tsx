@@ -37,34 +37,34 @@ export const Default: Story = {
                 <p className='text-large'>Welcome to UI Design</p>
                 <p className='text-small align-left'>2:30</p>
             </div>
-            <img src={completed} alt="completed" className="max-h-10 max-w-10 px-1"/>
+            <img src={completed} alt="completed" className="max-h-10 max-w-10 px-1 right-0"/>
         </Class>
-        <br/>
+        <div className='py-1'></div>
         <Class>
             <p className='left-0 text-large text-green-200'>02</p>
             <div className='px-2'>
                 <p className='text-large'>History of UI Design</p>
                 <p className='text-small align-left'>1:30</p>
             </div>
-            <img src={video} alt="video" className="max-h-10 max-w-10 px-1"/>
+            <img src={video} alt="video" className="max-h-10 max-w-10 px-1 right-0"/>
         </Class>
-        <br/>
+        <div className='py-1'></div>
         <Class>
             <p className='left-0 text-large text-green-200'>03</p>
             <div className='px-2'>
                 <p className='text-large'>Techniques UI Design</p>
                 <p className='text-small align-left'>8 pages</p>
             </div>
-            <img src={book} alt="book" className="max-h-10 max-w-10 px-1"/>
+            <img src={book} alt="book" className="max-h-10 max-w-10 px-1 right-0"/>
         </Class>
-        <br/>
+        <div className='py-1'></div>
         <Class>
             <p className='left-0 text-large text-green-200'>04</p>
             <div className='px-2'>
                 <p className='text-large'>Final Test</p>
                 <p className='text-small align-left'>7 questions</p>
             </div>
-            <img src={quiz} alt="quiz" className="max-h-10 max-w-10 px-1"/>
+            <img src={quiz} alt="quiz" className="max-h-10 max-w-10 px-1 right-0"/>
         </Class>
     </div>
 }
@@ -103,7 +103,7 @@ export const InLesson: Story = {
             </div>
             <img src={completed} alt="completed" className="max-h-10 max-w-10 px-1 right-0"/>
         </Class>
-        <br/>
+        <div className='py-1'></div>
         <Class>
             <p className='left-0 text-large text-green-200'>02</p>
             <div className='px-2'>
@@ -112,7 +112,7 @@ export const InLesson: Story = {
             </div>
             <img src={video} alt="video" className="max-h-10 max-w-10 px-1 right-0"/>
         </Class>
-        <br/>
+        <div className='py-1'></div>
         <Class>
             <p className='left-0 text-large text-green-200'>03</p>
             <div className='px-2'>
@@ -121,7 +121,7 @@ export const InLesson: Story = {
             </div>
             <img src={book} alt="book" className="max-h-10 max-w-10 px-1 right-0"/>
         </Class>
-        <br/>
+        <div className='py-1'></div>
         <Class>
             <p className='left-0 text-large text-green-200'>04</p>
             <div className='px-2'>

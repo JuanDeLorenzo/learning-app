@@ -1,11 +1,11 @@
 import React, {ReactNode} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 
-const blockVariant = cva(['w-full sm:w-fit','rounded-lg '],{
+const blockVariant = cva(['rounded-lg '],{
     variants:{
         variant:{
             classic:[
-                'bg-primary-700 text-white-300 text-medium rounded-lg',
+                'bg-primary-700 text-white-300 text-medium h-48 w-36 rounded-lg',
                 'hover:bg-black-100 hover:text-white-100'
             ],
             small:[
@@ -13,11 +13,11 @@ const blockVariant = cva(['w-full sm:w-fit','rounded-lg '],{
                 'hover:bg-black-100 hover:text-white-100'
             ],
             big: [
-                'bg-white-300 text-black-200 h-30 w-56 rounded flex items-center relative group',
+                'bg-white-300 text-black-200 h-30 rounded flex items-center relative group',
                 'hover:bg-white-400'
             ],
             search: [
-                'bg-primary-700 text-white-300 h-30 text-medium rounded flex items-center',
+                'bg-primary-700 text-white-300 h-30 w-60 text-medium rounded flex items-center',
                 'hover:bg-black-100 hover:text-white-100'
             ]
         }

@@ -2,7 +2,7 @@ import React, {ReactNode,ButtonHTMLAttributes} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 
 
-const profileVariant = cva(['w-full sm:w-fit','rounded-lg '],{
+const profileVariant = cva(['w-36 sm:w-fit','rounded-lg '],{
     variants:{
         variant:{
             standard:[

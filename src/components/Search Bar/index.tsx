@@ -1,11 +1,11 @@
 import React, {ReactNode} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 
-const searchVariant = cva(['w-full sm:w-fit','rounded-lg '],{
+const searchVariant = cva([],{
     variants:{
         variant:{
             standard:[
-                'bg-white-300 rounded-full h-10 max-w-20 border-opacity-0 px-2',
+                'bg-white-300 rounded-full h-10 w-72 border-opacity-0 px-2 focus:outline-none focus:ring-0',
             ]
         }
     },

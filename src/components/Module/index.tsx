@@ -5,7 +5,7 @@ const classVariant = cva([],{
     variants:{
         variant:{
             standard:[
-                'bg-white-200 h-10 w-full flex rounded-0',
+                'bg-white-200 h-10 w-full flex rounded-0 justify-between items-center',
                 'hover:bg-white-500 hover:shadow-lg'
             ]
         }
