@@ -73,19 +73,19 @@ export const InLesson: Story = {
     name:'In Lesson',
     render: (args) => <div className='bg-white-200 w-64 rounded items-center p-2'>
         <div className="flex items-center py-2 transform translate-x-9">
-            <div className="h-3 bg-primary-1000 w-40 rounded-full relative">
-                <div className="h-3 bg-pink-200 w-14 absolute rounded-full top-0"></div>
+            <div className="h-1 bg-primary-1000 w-40 rounded-full relative">
+                <div className="h-1 bg-pink-200 w-14 absolute rounded-full top-0"></div>
                 <div className="flex justify-between items-center absolute w-full px-2">
-                    <div className="relative transform -translate-y-1/3">
+                    <div className="relative transform -translate-y-1/2">
                             <Pointer variant="reached" />
                     </div>
-                    <div className="relative transform -translate-y-1/4">
+                    <div className="relative transform -translate-y-1/3">
                         <Pointer variant="doing" />
                     </div>
-                    <div className="relative transform -translate-y-1/3">
+                    <div className="relative transform -translate-y-1/2">
                         <Pointer variant="unreached" />
                     </div>
-                    <div className="relative transform -translate-y-1/3">
+                    <div className="relative transform -translate-y-1/2">
                         <Pointer variant="unreached" />
                     </div>
                 </div>
@@ -101,7 +101,7 @@ export const InLesson: Story = {
                 <p className='text-large'>Welcome to UI Design</p>
                 <p className='text-small align-left'>2:30</p>
             </div>
-            <img src={completed} alt="completed" className="max-h-10 max-w-10 px-1"/>
+            <img src={completed} alt="completed" className="max-h-10 max-w-10 px-1 right-0"/>
         </Class>
         <br/>
         <Class>
@@ -110,7 +110,7 @@ export const InLesson: Story = {
                 <p className='text-large'>History of UI Design</p>
                 <p className='text-small align-left'>1:30</p>
             </div>
-            <img src={video} alt="video" className="max-h-10 max-w-10 px-1"/>
+            <img src={video} alt="video" className="max-h-10 max-w-10 px-1 right-0"/>
         </Class>
         <br/>
         <Class>
@@ -119,7 +119,7 @@ export const InLesson: Story = {
                 <p className='text-large'>Techniques UI Design</p>
                 <p className='text-small align-left'>8 pages</p>
             </div>
-            <img src={book} alt="book" className="max-h-10 max-w-10 px-1"/>
+            <img src={book} alt="book" className="max-h-10 max-w-10 px-1 right-0"/>
         </Class>
         <br/>
         <Class>
@@ -128,7 +128,7 @@ export const InLesson: Story = {
                 <p className='text-large'>Final Test</p>
                 <p className='text-small align-left'>7 questions</p>
             </div>
-            <img src={quiz} alt="quiz" className="max-h-10 max-w-10 px-1"/>
+            <img src={quiz} alt="quiz" className="max-h-10 max-w-10 px-1 right-0"/>
         </Class>
     </div>
 }

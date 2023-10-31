@@ -1,7 +1,7 @@
 import React, {ReactNode} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 
-const classVariant = cva(['w-full sm:w-fit','rounded-lg '],{
+const classVariant = cva([],{
     variants:{
         variant:{
             standard:[

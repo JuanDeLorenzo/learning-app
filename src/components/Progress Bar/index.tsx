@@ -1,7 +1,7 @@
 import React, {ReactNode,ButtonHTMLAttributes} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 
-const pointerVariant = cva(['w-full sm:w-fit','rounded-lg '],{
+const pointerVariant = cva([],{
     variants:{
         variant:{
             unreached:[

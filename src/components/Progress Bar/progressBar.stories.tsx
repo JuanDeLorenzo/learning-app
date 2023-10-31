@@ -22,16 +22,16 @@ type Story = StoryObj<typeof Pointer>
 export const Lessons3: Story = {
     name:'3 Lessons',
     render: (args) => <div className="flex items-center">
-        <div className="h-3 bg-primary-1000 w-40 rounded-full relative">
-            <div className="h-3 bg-pink-200 w-20 absolute rounded-full top-0"></div>
+        <div className="h-1 bg-primary-1000 w-40 rounded-full relative">
+            <div className="h-1 bg-pink-200 w-20 absolute rounded-full top-0"></div>
             <div className="flex justify-between items-center absolute w-full px-3">
-                <div className="relative transform -translate-y-1/3">
+                <div className="relative transform -translate-y-1/2">
                     <Pointer variant="reached" />
                 </div>
-                <div className="relative transform -translate-y-1/4">
+                <div className="relative transform -translate-y-1/3">
                     <Pointer variant="doing" />
                 </div>
-                <div className="relative transform -translate-y-1/3">
+                <div className="relative transform -translate-y-1/2">
                     <Pointer variant="unreached" />
                 </div>
             </div>
@@ -42,22 +42,22 @@ export const Lessons3: Story = {
 export const Lessons5: Story = {
     name:'5 Lessons',
     render: (args) => <div className="flex items-center">
-        <div className="h-3 bg-primary-1000 w-40 rounded-full relative">
-            <div className="h-3 bg-pink-200 w-20 absolute rounded-full top-0"></div>
+        <div className="h-1 bg-primary-1000 w-40 rounded-full relative">
+            <div className="h-1 bg-pink-200 w-20 absolute rounded-full top-0"></div>
             <div className="flex justify-between items-center absolute w-full px-3">
-                <div className="relative transform -translate-y-1/3">
+                <div className="relative transform -translate-y-1/2">
+                    <Pointer variant="reached" />
+                </div>
+                <div className="relative transform -translate-y-1/2">
                     <Pointer variant="reached" />
                 </div>
                 <div className="relative transform -translate-y-1/3">
-                    <Pointer variant="reached" />
-                </div>
-                <div className="relative transform -translate-y-1/4">
                     <Pointer variant="doing" />
                 </div>
-                <div className="relative transform -translate-y-1/3">
+                <div className="relative transform -translate-y-1/2">
                     <Pointer variant="unreached" />
                 </div>
-                <div className="relative transform -translate-y-1/3">
+                <div className="relative transform -translate-y-1/2">
                     <Pointer variant="unreached" />
                 </div>
             </div>

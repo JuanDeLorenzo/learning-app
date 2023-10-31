@@ -2,19 +2,19 @@ import React, {ReactNode,ButtonHTMLAttributes} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 
 
-const buttonVariant = cva(['w-full sm:w-fit','rounded-lg '],{
+const buttonVariant = cva([],{
     variants:{
         variant:{
             standard:[
-                'bg-primary-700 text-white rounded-3xl',
+                'bg-primary-700 text-white rounded-3xl w-full',
                 'hover:bg-primary-100 hover:text-white rounded-3xl',
             ],
             reject:[
-                'bg-red-100 text-white rounded-full',
+                'bg-red-100 text-white rounded-lg w-16',
                 'hover:bg-red-300 hover:text-white-100 rounded-full',
             ],
             accept: [
-                "bg-blue-100 text-white rounded-full",
+                "bg-blue-100 text-white rounded-lg w-16",
                 "hover:bg-blue-300 hover:text-white-100 rounded-full",
             ],
             text: [
