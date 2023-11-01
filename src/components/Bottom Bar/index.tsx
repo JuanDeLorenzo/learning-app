@@ -1,7 +1,7 @@
 import React, {ReactNode} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 
-const barVariant = cva(['w-full sm:w-fit','rounded-lg '],{
+const barVariant = cva(['rounded-lg '],{
     variants:{
         variant:{
             classic:[

@@ -5,7 +5,7 @@ const searchVariant = cva([],{
     variants:{
         variant:{
             standard:[
-                'bg-white-300 rounded-full h-10 w-72 border-opacity-0 px-2 focus:outline-none focus:ring-0',
+                'bg-white-300 rounded-full h-10 border-opacity-0 px-2 focus:outline-none focus:ring-0',
             ]
         }
     },

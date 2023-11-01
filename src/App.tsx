@@ -2,18 +2,19 @@ import React from 'react';
 import Button from "./components/Button/index";
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import wishList from './WishListButton.png';
-import figma from './Figma.png';
-import user from './user.png';
-import star from './star.png';
-import difficulty from './difficulty.png';
+import wishList from './Images/WishListButton.png';
+import figma from './Images/Figma.png';
+import user from './Images/user.png';
+import star from './Images/star.png';
+import difficulty from './Images/difficulty.png';
 import homeBlack from "./components/Bottom Bar/Images/HomeSelected.png";
 import courses from "./components/Bottom Bar/Images/Courses.png";
 import messages from "./components/Bottom Bar/Images/Messages.png";
-import timer from "./timer.png"
-import book from "./book-open.png"
-import puzzle from "./puzzle.png"
+import timer from "./Images/timer.png"
+import book from "./Images/book-open.png"
+import puzzle from "./Images/puzzle.png"
 import BottomBar from "./components/Bottom Bar";
+import profile from "./components/Profile/Images/Profile.jpg";
 
 const HoverableIcon = () => {
     const [isHovered, setIsHovered] = React.useState(false);
@@ -31,7 +32,7 @@ const HoverableIcon = () => {
 function App() {
   return (
       <div>
-          <div className="bg-pink-background relative z-10 py-4 h-56">
+          <div className="bg-pink-background relative z-10 py-4 h-60">
               <div className="flex items-center justify-between">
                   <div className="flex align-left ml-6">
                       <Button variant={'back'} size={'tiny'}><HoverableIcon /></Button>
@@ -66,7 +67,7 @@ function App() {
               </div>
           </div>
 
-          <div className="bg-white rounded-lg">
+          <div className="bg-white rounded-3xl">
               <div className='p-4 text-justify'>
                   <p className='text-titan'>Description</p>
                   <p className='text-giant pt-2 '>Learn how to use Figma and create amazing designs for your web pages or mobile apps.</p>
@@ -86,17 +87,36 @@ function App() {
                           <img src={timer} alt="Timer" className="w-9 h-9" />
                           <p className="text-giant">2.5</p>
                           <p className="text-giant">Hours</p>
-
                       </div>
                   </div>
                   <br/>
                   <p className='text-titan'>Teachers</p>
+                  <div className="flex items-center ">
+                      <div className="rounded-full overflow-hidden w-7 h-7 border-3 border-black-900">
+                          <img src={profile} alt="User" className="w-full h-full object-cover" />
+                      </div>
+                      <p className="text-giant pl-2">Fabrizio Serial</p>
+                  </div>
+                  <div className="flex items-center ">
+                      <div className="rounded-full overflow-hidden w-7 h-7 border-3 border-black-900">
+                          <img src={profile} alt="User" className="w-full h-full object-cover" />
+                      </div>
+                      <p className="text-giant pl-2">Nazareth Lopez Gabeiras</p>
+                  </div>
                   <br/>
                   <p className='text-titan'>Lessons</p>
+                  <div>
+                      <p className="text-giant pl-2">1. Introduction</p>
+                      <p className="text-giant pl-2">2. Plugins</p>
+                      <p className="text-giant pl-2">3. Shapes</p>
+                      <p className="text-giant pl-2">4. Text</p>
+                      <p className="text-giant pl-2">5. Variants</p>
+                  </div>
                   <br/>
               </div>
+              <div className='py-14'></div>
               <div className="fixed bottom-0 w-full">
-                  <div className='ml-12 mb-4'>
+                  <div className='text-center'>
                     <Button variant={'standard'} size={'large'}>Join Course</Button>
                   </div>
                   <div className='my-2'></div>
