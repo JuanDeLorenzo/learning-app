@@ -6,7 +6,7 @@ const buttonVariant = cva([],{
     variants:{
         variant:{
             standard:[
-                'bg-primary-700 text-white rounded-3xl w-full',
+                'bg-primary-700 text-white-500 rounded-3xl w-72',
                 'hover:bg-primary-100 hover:text-white rounded-3xl',
             ],
             reject:[
@@ -34,7 +34,7 @@ const buttonVariant = cva([],{
             tiny: ['px-1 py-1 text-xs'],
             small:['px-5 py-1 text-xs'],
             medium:['px-4 py-3 text-sm'],
-            large:['px-12 py-1 text-lg'],
+            large:['px-12 py-1 text-giant'],
         }
     },
     defaultVariants:{

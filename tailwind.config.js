@@ -41,7 +41,12 @@ module.exports = {
         },
         green:{
           100: '#33FF00',
-            200: '#3D8A50'
+            200: '#3D8A50',
+            300:'#E1FAE9',
+            400: '#E1FAF7'
+        },
+        orange:{
+            100: '#F9FAE1',
         },
         black:{
             100: '#2E2A2A',
@@ -49,13 +54,16 @@ module.exports = {
             900: '#000000'
         },
         pink:{
-            200: '#EED1D7'
+            200: '#EED1D7',
+            background: '#E8C2CA'
         }},
     },
     fontSize:{
       'small' : '12px',
       'medium' : '14px',
       'large' : '16px',
+        'giant' : '24px',
+        'titan': '30px'
     }
   },
   plugins: [],
