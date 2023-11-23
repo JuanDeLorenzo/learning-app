@@ -1,7 +1,7 @@
 import {Meta, StoryObj} from "@storybook/react";
 import Profile from "./index";
 import React from "react";
-import profile from "./Images/Profile.jpg"
+import profile from "../../Assets/Profile.jpg"
 
 const meta: Meta<typeof Profile> ={
     title:'Profile',

@@ -1,33 +1,21 @@
 import React from 'react';
-import Button from "./components/Button/index";
+import Button from "./components/Button/Text Button";
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import wishList from './Images/WishListButton.png';
-import figma from './Images/Figma.png';
-import user from './Images/user.png';
-import star from './Images/star.png';
-import difficulty from './Images/difficulty.png';
-import homeBlack from "./components/Bottom Bar/Images/HomeSelected.png";
-import courses from "./components/Bottom Bar/Images/Courses.png";
-import messages from "./components/Bottom Bar/Images/Messages.png";
-import timer from "./Images/timer.png"
-import book from "./Images/book-open.png"
-import puzzle from "./Images/puzzle.png"
+import wishList from './Assets/Bookmark.png';
+import figma from './Assets/Figma.png';
+import user from './Assets/user.png';
+import star from './Assets/star.png';
+import difficulty from './Assets/easy.png';
+import homeBlack from "./Assets/HomeSelected.png";
+import courses from "./Assets/Courses.png";
+import messages from "./Assets/Messages.png";
+import timer from "./Assets/timer.png"
+import book from "./Assets/book-open.png"
+import puzzle from "./Assets/puzzle.png"
 import BottomBar from "./components/Bottom Bar";
-import profile from "./components/Profile/Images/Profile.jpg";
-
-const HoverableIcon = () => {
-    const [isHovered, setIsHovered] = React.useState(false);
-
-    return (
-        <div
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-        >
-            {isHovered ? <ArrowBackIosNewRoundedIcon /> : <ArrowBackIosNewIcon />}
-        </div>
-    );
-};
+import profile from "./Assets/Profile.jpg";
+import IconButton from "./components/Button/Icon Button";
 
 function App() {
   return (
@@ -35,7 +23,7 @@ function App() {
           <div className="bg-pink-background relative z-10 py-4 h-60">
               <div className="flex items-center justify-between">
                   <div className="flex align-left ml-6">
-                      <Button variant={'back'} size={'tiny'}><HoverableIcon /></Button>
+                      <IconButton variant={'icon'}></IconButton>
                   </div>
                   <div className="flex mr-1">
                       <p className="text-giant">Course Details</p>
@@ -117,7 +105,7 @@ function App() {
               <div className='py-14'></div>
               <div className="fixed bottom-0 w-full">
                   <div className='text-center'>
-                    <Button variant={'standard'} size={'large'}>Join Course</Button>
+                    <Button variant={'standard'}>Join Course</Button>
                   </div>
                   <div className='my-2'></div>
                   <BottomBar variant={'classic'}>

@@ -2,10 +2,10 @@ import {Meta, StoryObj} from "@storybook/react";
 import Pointer from "../Progress Bar/index";
 import Class from "./index"
 import React from "react";
-import completed from "./Image/Completed.png"
-import video from "./Image/Video.png"
-import book from "./Image/Book.png"
-import quiz from "./Image/Quiz.png"
+import completed from "../../Assets/Completed.png"
+import video from "../../Assets/Video.png"
+import book from "../../Assets/Book.png"
+import quiz from "../../Assets/Quiz.png"
 
 const meta: Meta<typeof Class> ={
     title:'Module',

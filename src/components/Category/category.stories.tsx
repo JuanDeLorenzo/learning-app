@@ -1,8 +1,8 @@
 import {Meta, StoryObj} from "@storybook/react";
 import Category from "./index";
 import React from "react";
-import pen from "./Images/Pen Tool.png"
-import darkPen from "./Images/Dark Pen.png"
+import pen from "../../Assets/Pen Tool.png"
+import darkPen from "../../Assets/Dark Pen.png"
 
 const meta: Meta<typeof Category> ={
     title:'Category',

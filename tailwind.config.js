@@ -4,17 +4,19 @@ module.exports = {
   theme: {
     extend: {colors:{
         primary:{
-          100: '#908683',
+          button: '#605856',
+          hoverButton: '#908683',
+          edit: '#767680',
+          hoverBlock: '#AEAEAE',
+          blockText: '#757575',
             200: '#D2D2D2',
           300: '#7E7472',
             400: '#A6ACAB',
           500: '#8A807D',
             600: '#C4C4C4',
-          700: '#605856',
             800: '#49555B',
           900: '#5A5453',
             1000: '#8C8C8C',
-          1100: '#757575'
         },
         red:{
           100: '#FE6262',
@@ -25,25 +27,25 @@ module.exports = {
           900: '#9F3C3C',
         },
         blue:{
-          100: '#8B62FE',
-          200: '#2DA7FF',
-          300: '#694ABF',
-          500: '#371CDF',
-          700: '#22118B',
-          800: '#3037E1',
-          900: '#1E1079',
+          button: '#8B62FE',
+          buttonHover: '#694ABF',
+          text: '#371CDF',
+          textHover: '#1E1079',
+          send: '#2DA7FF',
+          sendHover: '#3037E1',
+          profile: '#007AFF'
+
         },
         white:{
-          100: '#ACACAC',
-          200: '#F7F7F7',
-          300: '#F2F6F5',
-            400: '#AEAEAE',
-            500: '#FFFFFF',
-            600: '#F8F8F8'
+          pure: '#FFFFFF',
+          hover: '#ACACAC',
+          card: '#F2F6F5',
+          cardHover: '#B8B4B4',
+          textHover: '#B3B3B3'
         },
         green:{
-          100: '#33FF00',
-            200: '#3D8A50',
+          progress: '#33FF00',
+          progressHover: '#3D8A50',
             300:'#E1FAE9',
             400: '#E1FAF7'
         },
@@ -51,21 +53,16 @@ module.exports = {
             100: '#F9FAE1',
         },
         black:{
-            100: '#2E2A2A',
-            200: '#394247',
+            hoverBlock: '#2E2A2A',
+            hoverBlockText: '#1E2325',
+            cardTitle: '#394247',
+            hoverBigText: '#404040',
             900: '#000000'
         },
         pink:{
             200: '#EED1D7',
             background: '#E8C2CA'
         }},
-    },
-    fontSize:{
-      'small' : '12px',
-      'medium' : '14px',
-      'large' : '16px',
-        'giant' : '24px',
-        'titan': '30px'
     }
   },
   plugins: [],

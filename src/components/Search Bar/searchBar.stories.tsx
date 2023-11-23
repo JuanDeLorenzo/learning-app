@@ -23,22 +23,13 @@ type Story = StoryObj<typeof Search>
 
 export const Default: Story = {
     name:'Default',
-    render: (args) => <div className='rounded-full border bg-white-300 focus:border-black-900 px-2'>
-        <SearchIcon/>
-        <Search variant={"standard"} {...args}>
-        </Search>
-    </div>
+    render: (args) => <Search></Search>
+
 }
 
 export const Filter: Story = {
     name:'With Filter',
-    render: (args) => <div className='rounded-full border bg-white-300 focus:border-black-900 px-2'>
-        <SearchIcon/>
-        <Search variant={"standard"} {...args}>
-        </Search>
-        <button>
-            <FilterAltOutlinedIcon className="right-0"/>
-        </button>
-    </div>
+    render: (args) =>
+        <Search variant={"standard"} {...args} showFilter={true}></Search>
 
 }
