@@ -9,7 +9,8 @@ module.exports = {
           edit: '#767680',
           hoverBlock: '#AEAEAE',
           blockText: '#757575',
-            200: '#D2D2D2',
+          anotherText: '#D2D2D2',
+          categoryHover: '#C3CBC9',
           300: '#7E7472',
             400: '#A6ACAB',
           500: '#8A807D',
@@ -57,7 +58,7 @@ module.exports = {
             hoverBlockText: '#1E2325',
             cardTitle: '#394247',
             hoverBigText: '#404040',
-            900: '#000000'
+            pure: '#000000'
         },
         pink:{
             200: '#EED1D7',

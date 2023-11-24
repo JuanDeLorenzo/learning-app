@@ -21,54 +21,24 @@ type Story = StoryObj<typeof Message>
 
 export const Sent: Story = {
     name:'Sent',
-    render: (args) => <Message variant={'user'} {...args}>
-        <div className="flex items-center">
-            <p className="text-left text-medium pr-5 pb-2 text-white-500">My messages</p>
-        </div>
-        <div className="flex justify-between items-center mt-2">
-            <div>
-                <p className="text-primary-600 text-left">✓</p>
-            </div>
-            <p className="text-right text-white-500">11:31</p>
-        </div>
+    render: (args) => <Message variant={'user'} message={"Howdy"} hour={"22:48"}{...args}>
     </Message>
 }
 
 export const Received: Story = {
     name:'Received',
-    render: (args) => <Message variant={'user'} {...args}>
-        <div className="flex items-center">
-            <p className="text-left text-medium pr-5 pb-2 text-white-500">My messages</p>
-        </div>
-        <div className="flex justify-between items-center mt-2">
-            <div>
-                <p className="text-primary-600 text-left">✓✓</p>
-            </div>
-            <p className="text-right text-white-500">11:31</p>
-        </div>
+    render: (args) => <Message variant={'user'} status={"received"} message={"Howdy"} hour={"22:48"} {...args}>
     </Message>
 }
 
 export const Read: Story = {
     name:'Read',
-    render: (args) => <Message variant={'user'} {...args}>
-        <div className="flex items-center">
-            <p className="text-left text-medium pr-5 pb-2 text-white-500">My messages</p>
-        </div>
-        <div className="flex justify-between items-center mt-2">
-            <div>
-                <p className="text-green-100 text-left">✓✓</p>
-            </div>
-            <p className="text-right text-white-500">11:31</p>
-        </div>
+    render: (args) => <Message variant={'user'} status={"read"} message={"Howdy"} hour={"22:48"} {...args}>
     </Message>
 }
 
 export const Another: Story = {
     name:'Another',
-    render: (args) => <Message variant={'another'} {...args}>
-        <p className="pr-5 pb-1 font-bold"><u>User Name</u></p>
-        <p className="pb-1">Other's Message</p>
-        11:31
+    render: (args) => <Message variant={'another'} sender={"Fabrizio Serial"} message={"Howdy"} hour={"22:48"}{...args}>
     </Message>
 }
