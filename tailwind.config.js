@@ -11,8 +11,8 @@ module.exports = {
           blockText: '#757575',
           anotherText: '#D2D2D2',
           categoryHover: '#C3CBC9',
+          notifHover: '#A6ACAB',
           300: '#7E7472',
-            400: '#A6ACAB',
           500: '#8A807D',
             600: '#C4C4C4',
             800: '#49555B',
@@ -20,12 +20,10 @@ module.exports = {
             1000: '#8C8C8C',
         },
         red:{
-          100: '#FE6262',
-          300: '#D95555',
-          500: '#CA4D4D',
-          700: '#A94141',
-            800: '#943036',
-          900: '#9F3C3C',
+          button: '#FE6262',
+          buttonHover: '#D95555',
+          notification: '#CC444C',
+          notifHover: '#943036',
         },
         blue:{
           button: '#8B62FE',
@@ -42,11 +40,13 @@ module.exports = {
           hover: '#ACACAC',
           card: '#F2F6F5',
           cardHover: '#B8B4B4',
-          textHover: '#B3B3B3'
+          textHover: '#B3B3B3',
+          class: '#F7F7F7'
         },
         green:{
           progress: '#33FF00',
           progressHover: '#3D8A50',
+          classNumber: '#6DDE89',
             300:'#E1FAE9',
             400: '#E1FAF7'
         },

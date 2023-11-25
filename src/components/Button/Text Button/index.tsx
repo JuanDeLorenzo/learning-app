@@ -10,8 +10,8 @@ const buttonVariant = cva([],{
                 'hover:bg-primary-hoverButton hover:text-white-hover',
             ],
             reject:[
-                'bg-red-100 text-white-pure w-[123px] h-[54px] px-[45px] py-3 rounded-2xl justify-center items-center inline-flex text-2xl font-[\'Kumbh Sans\']',
-                'hover:bg-red-300 hover:text-white-hover',
+                'bg-red-button text-white-pure w-[123px] h-[54px] px-[45px] py-3 rounded-2xl justify-center items-center inline-flex text-2xl font-[\'Kumbh Sans\']',
+                'hover:bg-red-buttonHover hover:text-white-hover',
             ],
             accept: [
                 "bg-blue-button text-white-pure w-[123px] h-[54px] px-[45px] py-3 rounded-2xl justify-center items-center inline-flex text-2xl font-[\'Kumbh Sans\']",

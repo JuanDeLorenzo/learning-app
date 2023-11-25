@@ -24,10 +24,10 @@ export interface PointerProps extends ButtonHTMLAttributes<HTMLButtonElement>, V
 
 }
 
-const Pointer = ({variant,...rest}:PointerProps) => {
+const Marker = ({variant,...rest}:PointerProps) => {
     return <button className={pointerVariant({variant})} {...rest}>
         1
     </button>
 }
 
-export default Pointer
+export default Marker
