@@ -34,7 +34,7 @@ const Module = ({variant, title="Title", components="0 videos, 0 lectures, 0 qui
         }
         <div className="w-[348px] h-[66px] px-[15px] py-[7px] flex-col justify-center items-start gap-px flex">
             <div className="text-black-pure text-xl font-semibold">{title}</div>
-            <div className="text-text-primary-blockText text-sm font-normal">{components}</div>
+            <div className="text-primary-blockText text-sm font-normal">{components}</div>
         </div>
         <div className="flex-col justify-center items-center gap-[3px] flex">
             {classList.map((classItem, index) => (

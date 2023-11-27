@@ -11,7 +11,7 @@ const barVariant = cva(['rounded-lg '],{
     variants:{
         variant:{
             classic:[
-                'bg-white-200 px-4 py-2 text-primary-800 flex justify-between',
+                'bg-white-pure px-4 py-2 text-primary-800 flex justify-between',
             ],
         }
     },

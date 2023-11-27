@@ -5,13 +5,13 @@ const pointerVariant = cva([],{
     variants:{
         variant:{
             unreached:[
-                'bg-primary-1000 rounded-full h-5 w-5 flex items-center justify-center text-primary-1000',
+                'bg-primary-marker rounded-full h-5 w-5 flex items-center justify-center text-primary-marker',
             ],
             reached:[
-                'bg-pink-200 rounded-full h-5 w-5 flex items-center justify-center text-pink-200',
+                'bg-pink-marker rounded-full h-5 w-5 flex items-center justify-center text-pink-marker',
             ],
             doing:[
-                'bg-pink-200 rounded-full h-7 w-7 flex items-center justify-center text-pink-200',
+                'bg-pink-marker rounded-full h-7 w-7 flex items-center justify-center text-pink-marker',
             ]
         }
     },

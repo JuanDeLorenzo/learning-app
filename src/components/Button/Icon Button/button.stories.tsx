@@ -6,7 +6,9 @@ import edit from '../../../Assets/EditProfile.png'
 import editHover from '../../../Assets/EditProfilePressed.png'
 import wish from '../../../Assets/Bookmark.png'
 import wishHover from '../../../Assets/BookmarkHover.png'
+import wishSelected from "../../../Assets/BookmarkSelected.png"
 import profile from '../../../Assets/Avatar.png'
+import x from '../../../Assets/X.png'
 import React from "react";
 
 const meta: Meta<typeof Button> ={
@@ -15,7 +17,7 @@ const meta: Meta<typeof Button> ={
     tags: ['autodocs'],
     argTypes:{
         variant:{
-            options:['send', 'icon', 'profile'],
+            options:['send', 'icon', 'profile','close'],
             control:{type:'select'},
             defaultValue:'icon'
         }
@@ -49,9 +51,21 @@ export const Edit: Story = {
     </Button>
 }
 
+export const Close: Story = {
+    name:'Close',
+    render: (args) => <Button variant={'close'}{...args} imageNormal={x} imageHover={x}>
+    </Button>
+}
+
 export const Wish: Story = {
     name:'Wish',
     render: (args) => <Button variant={'icon'}{...args} imageNormal={wish} imageHover={wishHover}>
+    </Button>
+}
+
+export const Wished: Story = {
+    name:'Wished',
+    render: (args) => <Button variant={'icon'}{...args} imageNormal={wishSelected} imageHover={wishSelected}>
     </Button>
 }
 

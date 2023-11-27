@@ -14,7 +14,11 @@ const buttonVariant = cva([],{
                 "textButton justify-center items-center inline-flex relative",
             ],
             profile:[
-                "w-[61px] h-[61px] rounded-[32px] justify-center items-center shadow"
+                "w-[61px] h-[61px] rounded-[32px] justify-center items-center"
+            ],
+            close:[
+                "w-[30px] h-[30px] bg-primary-edit bg-opacity-20 rounded-[64px] justify-start items-start gap-2.5 inline-flex",
+                "hover:bg-blue-profile hover:bg-opacity-20"
             ]
         }
     },

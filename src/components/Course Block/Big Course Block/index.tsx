@@ -6,7 +6,7 @@ const blockVariant = cva(['rounded-lg '],{
     variants:{
         variant:{
             big: [
-                'bg-white-card w-[406.17px] h-[173px] group rounded-lg items-center gap-1 inline-flex',
+                'bg-white-card w-cover h-[173px] group rounded-lg items-center gap-1 inline-flex',
                 'hover:bg-white-cardHover'
             ]
         }
@@ -31,8 +31,8 @@ const Block = ({variant, picture = image, course="class", percentage = 0,...rest
             <div className="flex-col flex pl-2">
                 <span className="text-right text-xs mr-2 text-black-blockText group-hover:text-black-hoverBigText">{percentage}%</span>
                 <div className="left-0 relative">
-                    <div className="h-[13.79px] absolute bg-gray-300 rounded-[15px] group-hover:bg-gray-700" style={{ width: `164.22px` }}></div>
-                    <div className="h-[13.79px] absolute bg-green-progress rounded-[15px] group-hover:bg-green-progressHover" style={{ width: `${(164.22 * percentage/100)}px` }}></div>
+                    <div className="h-[13.79px] w-full absolute bg-gray-300 rounded-[15px] group-hover:bg-gray-700" style={{ width: `164.22px` }}></div>
+                    <div className="h-[13.79px] w-full absolute bg-green-progress rounded-[15px] group-hover:bg-green-progressHover" style={{ width: `${(164.22 * percentage/100)}px` }}></div>
                 </div>
             </div>
         </div>

@@ -1,132 +1,101 @@
 import React from 'react';
 import Button from "./components/Button/Text Button";
-import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
-import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
-import wishList from './Assets/Bookmark.png';
-import figma from './Assets/Figma.png';
-import user from './Assets/user.png';
-import star from './Assets/star.png';
-import difficulty from './Assets/easy.png';
-import homeBlack from "./Assets/HomeSelected.png";
-import courses from "./Assets/Courses.png";
-import messages from "./Assets/Messages.png";
-import timer from "./Assets/timer.png"
-import book from "./Assets/book-open.png"
-import puzzle from "./Assets/puzzle.png"
+import Teachers from "./components/Course Info/Teachers"
+import Details from "./components/Course Info/Course Details"
 import BottomBar from "./components/Bottom Bar";
-import profile from "./Assets/Profile.jpg";
 import IconButton from "./components/Button/Icon Button";
+import CourseTitle from "./components/Course Info/Course Title";
+import figma from './Assets/Figma.png';
+import wish from "./Assets/Bookmark.png";
+import wishHover from "./Assets/BookmarkHover.png";
+import wishSelected from "./Assets/BookmarkSelected.png"
+import Modal from '@mui/material/Modal';
+
 
 function App() {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
+    const [wished, setWished] = React.useState(false);
+    const wishNow = () => setWished(true);
+    const unwish = () => setWished(false);
+
   return (
-      <div>
-          <div className="bg-pink-background relative z-10 py-4 h-60">
+      <div className="bg-pink-background">
+          <div className="relative z-10 py-4 h-60">
               <div className="flex items-center justify-between">
                   <div className="flex align-left ml-6">
                       <IconButton variant={'icon'}></IconButton>
                   </div>
                   <div className="flex mr-1">
-                      <p className="text-giant">Course Details</p>
+                      <p className="text-black-pure text-2xl font-regular font-['Kumbh Sans']">Course Details</p>
                   </div>
-                  <button>
-                      <img src={wishList} alt="Wish-List Button" className="w-12 h-12 mr-8" />
-                  </button>
+                  <div className="flex align-right mr-6">
+                      {wished?
+                          <IconButton variant={'icon'} imageNormal={wishSelected} imageHover={wishSelected} onClick={unwish}></IconButton>
+                          :
+                          <IconButton variant={'icon'} imageNormal={wish} imageHover={wishHover} onClick={wishNow}></IconButton>
+                      }
+                  </div>
               </div>
               <br/>
-              <div className="flex justify-between">
-                  <div className="ml-6 ">
-                      <p className="text-titan">Learn Figma</p>
-                      <div className="flex justify-between items-center">
-                          <div className="flex">
-                              <img src={user} alt="Wish-List Button" className="w-6 h-6" />
-                            18k
-                          </div>
-                          <div className="flex">
-                              <img src={star} alt="Wish-List Button" className="w-6 h-6" />
-                            4.8
-                          </div>
-                          <div className="flex">
-                              <img src={difficulty} alt="Wish-List Button" className="w-6 h-6" />
-                            Easy
-                          </div>
-                      </div>
-                  </div>
-                  <img src={figma} alt="Figma Icon" className="w-44 h-44 mr-3 transform -translate-y-4" />
+              <div className="pl-5">
+                  <CourseTitle name={"Learn Figma"} users={18} rating={4.8} picture={figma}></CourseTitle>
               </div>
           </div>
-
-          <div className="bg-white rounded-3xl">
+          <Modal
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+          >
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[346px] h-[304px] px-[26px] py-[51px] bg-stone-200 rounded-[40px] flex-col justify-start items-start gap-[78px] inline-flex shadow-lg">
+                  <div className="w-[280px] text-center text-black text-2xl font-medium font-['Kumbh Sans']">
+                      Join the course ‘’Learn Figma´´?
+                  </div>
+                  <div className="justify-center items-center gap-[42px] inline-flex">
+                      <Button variant={"reject"} onClick={handleClose}>No</Button>
+                      <Button variant={"accept"} onClick={handleClose}>Yes</Button>
+                  </div>
+              </div>
+          </Modal>
+          <div className="bg-white-pure rounded-3xl">
               <div className='p-4 text-justify'>
-                  <p className='text-titan'>Description</p>
-                  <p className='text-giant pt-2 '>Learn how to use Figma and create amazing designs for your web pages or mobile apps.</p>
+                  <p className="text-black-pure text-2xl font-medium font-['Kumbh Sans']">Description</p>
+                  <p className="text-black-pure text-xl font-medium font-['Kumbh Sans'] pt-2">Learn how to use Figma and create amazing designs for your web pages or mobile apps.</p>
                   <br/>
-                  <div className="flex items-center justify-between">
-                      <div className="bg-green-300 h-36 w-32 rounded-lg p-4">
-                          <img src={book} alt="Book" className="w-9 h-9" />
-                          <p className="text-giant">16</p>
-                          <p className="text-giant">Lessons</p>
-                      </div>
-                      <div className="bg-green-400 h-36 w-32 rounded-lg p-4 mx-1">
-                          <img src={puzzle} alt="Puzzle" className="w-9 h-9" />
-                          <p className="text-giant">8</p>
-                          <p className="text-giant">Quizzes</p>
-                      </div>
-                      <div className="bg-orange-100 h-36 w-32 rounded-lg p-4">
-                          <img src={timer} alt="Timer" className="w-9 h-9" />
-                          <p className="text-giant">2.5</p>
-                          <p className="text-giant">Hours</p>
-                      </div>
+                  <div className="flex items-center justify-between px-7">
+                      <Details variant={"lesson"} quantity={16}></Details>
+                      <Details variant={"quizzes"} quantity={8}></Details>
+                      <Details variant={"hours"} quantity={2.5}></Details>
                   </div>
                   <br/>
-                  <p className='text-titan'>Teachers</p>
+                  <p className="text-black-pure text-2xl font-medium font-['Kumbh Sans']">Teachers</p>
                   <div className="flex items-center ">
-                      <div className="rounded-full overflow-hidden w-7 h-7 border-3 border-black-900">
-                          <img src={profile} alt="User" className="w-full h-full object-cover" />
-                      </div>
-                      <p className="text-giant pl-2">Fabrizio Serial</p>
+                      <Teachers name={"Fabrizio Serial"}></Teachers>
                   </div>
                   <div className="flex items-center ">
-                      <div className="rounded-full overflow-hidden w-7 h-7 border-3 border-black-900">
-                          <img src={profile} alt="User" className="w-full h-full object-cover" />
-                      </div>
-                      <p className="text-giant pl-2">Nazareth Lopez Gabeiras</p>
+                      <Teachers name={"Nazareth Lopez Gabeiras"}></Teachers>
                   </div>
                   <br/>
-                  <p className='text-titan'>Lessons</p>
-                  <div>
-                      <p className="text-giant pl-2">1. Introduction</p>
-                      <p className="text-giant pl-2">2. Plugins</p>
-                      <p className="text-giant pl-2">3. Shapes</p>
-                      <p className="text-giant pl-2">4. Text</p>
-                      <p className="text-giant pl-2">5. Variants</p>
+                  <p className="text-black-pure text-2xl font-medium font-['Kumbh Sans']">Lessons</p>
+                  <div className="text-black-pure text-2xl font-medium font-['Kumbh Sans'] pl-2">
+                      <p>1. Introduction</p>
+                      <p>2. Plugins</p>
+                      <p>3. Shapes</p>
+                      <p>4. Text</p>
+                      <p>5. Variants</p>
                   </div>
                   <br/>
               </div>
               <div className='py-14'></div>
               <div className="fixed bottom-0 w-full">
                   <div className='text-center'>
-                    <Button variant={'standard'}>Join Course</Button>
+                    <Button onClick={handleOpen}>Join Course</Button>
                   </div>
                   <div className='my-2'></div>
-                  <BottomBar variant={'classic'}>
-                      <div className="flex flex-col items-center px-4 text-small">
-                          <button className="text-3xl">
-                              <img src={homeBlack} alt="Square Button" className="w-12 h-12" />
-                              Home
-                          </button>
-                      </div>
-                      <div className="flex flex-col items-center px-10 text-small">
-                          <button className="text-3xl">
-                              <img src={courses} alt="Square Button" className="w-12 h-12" />
-                              Courses
-                          </button>
-                      </div>
-                      <div className="flex flex-col items-center px-4 text-small">
-                          <button>
-                              <img src={messages} alt="Square Button" className="w-12 h-12" />
-                              Messages
-                          </button>
-                      </div>
+                  <BottomBar>
                   </BottomBar>
               </div>
           </div>

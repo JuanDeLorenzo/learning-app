@@ -14,7 +14,8 @@ const meta: Meta<typeof Button> ={
             options:['standard','reject','accept', 'text', 'underline'],
             control:{type:'select'},
             defaultValue:'standard'
-        }
+        },
+        disabled: { control: 'boolean' }
     }
 }
 

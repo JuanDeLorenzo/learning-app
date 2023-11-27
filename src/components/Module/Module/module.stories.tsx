@@ -37,7 +37,7 @@ export const Basic: Story = {
         title={"Module 1: Introduction"}
         components={"1 video, 1 Lecture, 1 quiz"}
         classList={[
-            <Class lesson={"01"} title={"What is UI Design?"} time={"7:32"} finished={true}></Class>,
+            <Class lesson={"01"} title={"What is UI Design?"} time={"7:32"} ></Class>,
             <Class lesson={"02"} title={"Set up Figma account"} time={"5:30"} icon={"lecture"}></Class>,
             <Class lesson={"03"} title={"Working with Figma Layer"} time={"9:56"} icon={"quiz"}></Class>
         ]}

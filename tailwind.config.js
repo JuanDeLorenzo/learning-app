@@ -12,18 +12,16 @@ module.exports = {
           anotherText: '#D2D2D2',
           categoryHover: '#C3CBC9',
           notifHover: '#A6ACAB',
-          300: '#7E7472',
-          500: '#8A807D',
-            600: '#C4C4C4',
-            800: '#49555B',
-          900: '#5A5453',
-            1000: '#8C8C8C',
+          input: '#6d6868',
+          data: '#B8AEAE',
+          marker:'#8C8C8C'
         },
         red:{
           button: '#FE6262',
           buttonHover: '#D95555',
           notification: '#CC444C',
           notifHover: '#943036',
+          error: '#FF0000'
         },
         blue:{
           button: '#8B62FE',
@@ -32,7 +30,8 @@ module.exports = {
           textHover: '#1E1079',
           send: '#2DA7FF',
           sendHover: '#3037E1',
-          profile: '#007AFF'
+          profile: '#007AFF',
+          enrolled: '#4E7ED9'
 
         },
         white:{
@@ -41,17 +40,21 @@ module.exports = {
           card: '#F2F6F5',
           cardHover: '#B8B4B4',
           textHover: '#B3B3B3',
-          class: '#F7F7F7'
+          class: '#F7F7F7',
+          input: '#F8F8F8',
+          statistics: '#FDFCFC'
         },
         green:{
           progress: '#33FF00',
           progressHover: '#3D8A50',
           classNumber: '#6DDE89',
-            300:'#E1FAE9',
-            400: '#E1FAF7'
+          profile: '#75B578',
+          lesson:'#E1FAE9',
+          quizzes: '#E1FAF7'
         },
         orange:{
-            100: '#F9FAE1',
+            learning: '#F4B75C',
+            time: '#F9FAE1',
         },
         black:{
             hoverBlock: '#2E2A2A',
@@ -61,8 +64,10 @@ module.exports = {
             pure: '#000000'
         },
         pink:{
-            200: '#EED1D7',
-            background: '#E8C2CA'
+            marker: '#EED1D7',
+            accuracy: '#F18291',
+            background: '#E8C2CA',
+            button: '#F7D1CD'
         }},
     }
   },

@@ -30,50 +30,56 @@ const Message = ({variant, status='sent', sender="Somebody", message="Hello", ho
     const isUserVariant = variant === 'user';
 
     return <div className={messageVariant({variant})} {...rest}>
+        <div className="flex items-center">
             {isUserVariant ?
                 <>
-                    <div className="flex items-center">
-                        <p className="text-left text-medium pr-5 pt-1 text-[15px] font-normal font-['Kumbh Sans']">{message}</p>
-                    </div>
-                    <div className="h-5"></div>
-                    <div className="flex justify-between items-center mt-1">
-                        <div>
-                            {status === 'read' ?
-                                <div>
-                                    <p className="text-green-progress text-left">✓✓</p>
-                                </div>
-                                :
-                                <div></div>
-                            }
-                            {status === 'sent' ?
-                                <div>
-                                    <p className="text-left">✓</p>
-                                </div>
-                                :
-                                <div></div>
-                            }
-                            {status === 'received' ?
-                                <div>
-                                    <p className="text-left">✓✓</p>
-                                </div>
-                                :
-                                <div></div>
-                            }
-                        </div>
-                        <p className="text-right text-xs font-normal font-['Kumbh Sans']">{hour}</p>
-                    </div>
+                    <p className="text-left text-medium pr-5 pt-1 text-[15px] font-normal font-['Kumbh Sans']">{message}</p>
                 </> :
                 <>
                     <div className="flex-col items-center">
                         <p className="pr-5 font-bold text-[15px] font-['Kumbh Sans']"><u>{sender}</u></p>
                         <p className="pr-5 font-normal text-[15px] font-['Kumbh Sans']">{message}</p>
                     </div>
-                    <div className="h-5"></div>
-                    <div>
-                        <p className="text-right pb-1 text-xs font-normal font-['Kumbh Sans']">{hour}</p>
-                    </div>
                 </>
             }
+        </div>
+        <div className="h-5"></div>
+        {isUserVariant ?
+            <>
+                <div className="flex justify-between items-center mt-1">
+                    <div>
+                        {status === 'read' ?
+                            <div>
+                                <p className="text-green-progress text-left">✓✓</p>
+                            </div>
+                            :
+                            <div></div>
+                        }
+                        {status === 'sent' ?
+                            <div>
+                                <p className="text-left">✓</p>
+                            </div>
+                            :
+                            <div></div>
+                        }
+                        {status === 'received' ?
+                            <div>
+                                <p className="text-left">✓✓</p>
+                            </div>
+                            :
+                            <div></div>
+                        }
+                    </div>
+                    <p className="text-right text-xs font-normal font-['Kumbh Sans']">{hour}</p>
+                </div>
+            </>
+            :
+            <>
+                <div>
+                    <p className="text-right pb-1 text-xs font-normal font-['Kumbh Sans']">{hour}</p>
+                </div>
+            </>
+        }
     </div>
 }
 export default Message
