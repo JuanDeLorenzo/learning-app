@@ -1,14 +1,11 @@
 import {Meta, StoryObj} from "@storybook/react";
 import Button from "./index";
-import send from '../../../Assets/Send.png'
-import sendHover from '../../../Assets/SendPressed.png'
-import edit from '../../../Assets/EditProfile.png'
-import editHover from '../../../Assets/EditProfilePressed.png'
-import wish from '../../../Assets/Bookmark.png'
-import wishHover from '../../../Assets/BookmarkHover.png'
-import wishSelected from "../../../Assets/BookmarkSelected.png"
-import profile from '../../../Assets/Avatar.png'
-import x from '../../../Assets/X.png'
+import send from '../../../Assets/Icon Button Symbols/Send.png'
+import edit from '../../../Assets/Icon Button Symbols/EditProfile.png'
+import wish from '../../../Assets/Icon Button Symbols/Bookmark.png'
+import wishSelected from "../../../Assets/Icon Button Symbols/BookmarkSelected.png"
+import profile from '../../../Assets/Icon Button Symbols/Avatar.png'
+import x from '../../../Assets/Profile Symbols/X.png'
 import React from "react";
 
 const meta: Meta<typeof Button> ={
@@ -36,7 +33,7 @@ export const Default: Story = {
 
 export const Send: Story = {
     name:'Send',
-    render: (args) => <Button variant={'send'}{...args} imageNormal={send} imageHover={sendHover}>
+    render: (args) => <Button variant={'send'}{...args} image={send}>
     </Button>
 }
 
@@ -47,30 +44,30 @@ export const Back: Story = {
 
 export const Edit: Story = {
     name:'Edit',
-    render: (args) => <Button variant={'icon'}{...args} imageNormal={edit} imageHover={editHover}>
+    render: (args) => <Button variant={'icon'}{...args} image={edit}>
     </Button>
 }
 
 export const Close: Story = {
     name:'Close',
-    render: (args) => <Button variant={'close'}{...args} imageNormal={x} imageHover={x}>
+    render: (args) => <Button variant={'close'}{...args} image={x} >
     </Button>
 }
 
 export const Wish: Story = {
     name:'Wish',
-    render: (args) => <Button variant={'icon'}{...args} imageNormal={wish} imageHover={wishHover}>
+    render: (args) => <Button variant={'icon'}{...args} image={wish}>
     </Button>
 }
 
 export const Wished: Story = {
     name:'Wished',
-    render: (args) => <Button variant={'icon'}{...args} imageNormal={wishSelected} imageHover={wishSelected}>
+    render: (args) => <Button variant={'icon'}{...args} image={wishSelected}>
     </Button>
 }
 
 export const Profile: Story = {
     name:'Profile',
-    render: (args) => <Button variant={'profile'}{...args} imageNormal={profile} imageHover={profile}>
+    render: (args) => <Button variant={'profile'}{...args} image={profile}>
     </Button>
 }

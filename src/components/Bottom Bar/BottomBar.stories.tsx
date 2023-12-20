@@ -6,13 +6,6 @@ const meta: Meta<typeof BottomBar> ={
     title:'Bottom Bar',
     component:BottomBar,
     tags: ['autodocs'],
-    argTypes:{
-        variant:{
-            options:['classic'],
-            control:{type:'select'},
-            defaultValue:'homeSelected'
-        }
-    }
 }
 
 export default meta

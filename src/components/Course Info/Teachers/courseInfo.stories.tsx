@@ -1,7 +1,7 @@
 import {Meta, StoryObj} from "@storybook/react";
 import Teacher from "./index";
 import React from "react";
-import profile from '../../../Assets/Avatar.png'
+import profile from '../../../Assets/Icon Button Symbols/Avatar.png'
 
 const meta: Meta<typeof Teacher> ={
     title:'Teacher Cards',

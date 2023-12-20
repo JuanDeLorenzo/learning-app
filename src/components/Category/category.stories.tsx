@@ -2,7 +2,6 @@ import {Meta, StoryObj} from "@storybook/react";
 import Category from "./index";
 import React from "react";
 import pen from "../../Assets/Pen Tool.png"
-import darkPen from "../../Assets/Dark Pen.png"
 
 const meta: Meta<typeof Category> ={
     title:'Category',
@@ -29,6 +28,6 @@ export const Default: Story = {
 
 export const GraphicDesign: Story = {
     name:'Graphic Design',
-    render: (args) => <Category {...args} imageNormal={pen} imageHover={darkPen} category={"Graphic Design"}>
+    render: (args) => <Category {...args} image={pen} category={"Graphic Design"}>
     </Category>
 }

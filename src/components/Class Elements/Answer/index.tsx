@@ -6,14 +6,13 @@ const categoryVariant = cva(['rounded-lg '],{
     variants:{
         variant:{
             answer:[
-                'w-[387px] h-[45px] pl-6 py-[5px] bg-zinc-300 rounded-3xl items-center inline-flex text-justify text-black text-xl font-normal font-[\'Kumbh Sans\']',
-                'hover:bg-primary-categoryHover',
+                'w-full h-[45px] pl-6 py-[5px] bg-greyscale-400 rounded-3xl items-center inline-flex text-justify text-typography-600 text-body font-body',
             ],
             correct:[
-                'w-[387px] h-[45px] pl-5 py-[5px] bg-zinc-300 rounded-3xl items-center inline-flex text-justify border-4 border-green-400 text-black text-xl font-normal font-[\'Kumbh Sans\']',
+                'w-full h-[45px] pl-5 py-[5px] bg-greyscale-400 rounded-3xl items-center inline-flex text-justify border-4 border-answer-success text-typography-600 text-body font-body',
             ],
             wrong:[
-                'w-[387px] h-[45px] pl-5 py-[5px] bg-zinc-300 rounded-3xl items-center inline-flex text-justify border-4 border-red-400 text-black text-xl font-normal font-[\'Kumbh Sans\']',
+                'w-full h-[45px] pl-5 py-[5px] bg-greyscale-400 rounded-3xl items-center inline-flex text-justify border-4 border-answer-error text-typography-600 text-body font-body',
             ]
         }
     },

@@ -1,4 +1,4 @@
-import React, {ReactNode} from 'react'
+import React, {ButtonHTMLAttributes, ReactNode} from 'react'
 import {cva, VariantProps} from "class-variance-authority";
 import image from "../../../Assets/Picture.jpg";
 
@@ -6,8 +6,7 @@ const blockVariant = cva(['rounded-lg '],{
     variants:{
         variant:{
             small:[
-                'bg-primary-button w-[173px] h-[129px] rounded-lg flex-col group justify-center items-center text-white-pure inline-flex',
-                'hover:bg-black-hoverBlock hover:text-white-textHover'
+                'bg-primary-600 text-typography-400 w-[173px] h-[129px] rounded-lg flex-col group justify-center items-center inline-flex',
             ]
         }
     },
@@ -16,7 +15,7 @@ const blockVariant = cva(['rounded-lg '],{
     }
 })
 
-export interface BlockProps extends  VariantProps<typeof blockVariant>{
+export interface BlockProps extends ButtonHTMLAttributes<HTMLButtonElement>,  VariantProps<typeof blockVariant>{
     children?: ReactNode;
     picture?: string;
     course?: string;
@@ -30,7 +29,7 @@ const Block = ({variant, picture=image, course="course", notifications=0,...rest
         <div className="w-[24.07px] h-[24.07px] text-center items-center justify-center absolute bg-red-notification rounded-full text-lg font-normal font-['League Spartan'] -mr-44 mt-16 group-hover:bg-red-notifHover">
             <span> {notifications} </span>
         </div>: <div/>}
-        <div className="w-40 h-[30px] text-[15px] text-left font-medium font-['Kumbh Sans'] py-1">{course}</div>
+        <div className="w-40 h-[30px] text-[15px] text-label font-label py-1">{course}</div>
     </button>
 }
 

@@ -1,76 +1,76 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
-  theme: {
-    extend: {colors:{
-        primary:{
-          button: '#605856',
-          hoverButton: '#908683',
-          edit: '#767680',
-          hoverBlock: '#AEAEAE',
-          blockText: '#757575',
-          anotherText: '#D2D2D2',
-          categoryHover: '#C3CBC9',
-          notifHover: '#A6ACAB',
-          input: '#6d6868',
-          data: '#B8AEAE',
-          marker:'#8C8C8C'
-        },
-        red:{
-          button: '#FE6262',
-          buttonHover: '#D95555',
-          notification: '#CC444C',
-          notifHover: '#943036',
-          error: '#FF0000'
-        },
-        blue:{
-          button: '#8B62FE',
-          buttonHover: '#694ABF',
-          text: '#371CDF',
-          textHover: '#1E1079',
-          send: '#2DA7FF',
-          sendHover: '#3037E1',
-          profile: '#007AFF',
-          enrolled: '#4E7ED9'
-
-        },
-        white:{
-          pure: '#FFFFFF',
-          hover: '#ACACAC',
-          card: '#F2F6F5',
-          cardHover: '#B8B4B4',
-          textHover: '#B3B3B3',
-          class: '#F7F7F7',
-          input: '#F8F8F8',
-          statistics: '#FDFCFC'
-        },
-        green:{
-          progress: '#33FF00',
-          progressHover: '#3D8A50',
-          classNumber: '#6DDE89',
-          profile: '#75B578',
-          lesson:'#E1FAE9',
-          quizzes: '#E1FAF7'
-        },
-        orange:{
-            learning: '#F4B75C',
-            time: '#F9FAE1',
-        },
-        black:{
-            hoverBlock: '#2E2A2A',
-            hoverBlockText: '#1E2325',
-            cardTitle: '#394247',
-            hoverBigText: '#404040',
-            pure: '#000000'
-        },
-        pink:{
-            marker: '#EED1D7',
-            accuracy: '#F18291',
-            background: '#E8C2CA',
-            button: '#F7D1CD'
-        }},
-    }
-  },
-  plugins: [],
+    content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Kumbh Sans', 'sans-serif'],
+            },
+            fontSize: {
+                headline: '32px',
+                display: '30px',
+                title: '24px',
+                body: '20px',
+                label: '16px',
+                labelXS: '13px',
+            },
+            fontWeight: {
+                headline: '500',
+                display: '700',
+                title: '600',
+                body: '400',
+                label: '600',
+                labelXS: '500',
+            },
+            colors: {
+                primary: {
+                    400: '#FDFCFC',
+                    500: '#B8B0B0',
+                    600: '#605856',
+                },
+                secondary: {
+                    400: '#EED1D7',
+                    500: '#F7D1CD',
+                    600: '#E8C2CA',
+                },
+                greyscale: {
+                    200: '#F7F7F7',
+                    400: '#D2D2D2',
+                    600: '#AEAEAE',
+                    800: '#8C8C8C'
+                },
+                answer: {
+                    success: '#63B08B',
+                    error: '#FE6262'
+                },
+                notification: {
+                    notification: '#CC444C'
+                },
+                message: {
+                    read: '#33FF00',
+                    user: '#2DA7FF'
+                },
+                typography: {
+                    400: '#FFFFFF',
+                    500: '#757575',
+                    600: '#000000',
+                    link: '#371CDF',
+                    class: '#6DDE89'
+                },
+                course: {
+                    lesson: '#E1FAE9',
+                    quizzes: '#E1FAF7',
+                    time: '#F9FAE1'
+                },
+                statistics: {
+                    enrolled: '#4E7ED9',
+                    completed: '#75B578',
+                    time: '#F4B75C',
+                    accuracy: '#F18291'
+                },
+            },
+        }
+    },
+    plugins: [],
 }
 

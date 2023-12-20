@@ -2,10 +2,10 @@ import {Meta, StoryObj} from "@storybook/react";
 import Progress from "../../Progress Bar/Progress Bar";
 import Module from "./index"
 import React from "react";
-import completed from "../../../Assets/Completed.png"
-import video from "../../../Assets/Video.png"
-import book from "../../../Assets/Book.png"
-import quiz from "../../../Assets/Quiz.png"
+import completed from "../../../Assets/Module Symbols/Completed.png"
+import video from "../../../Assets/Module Symbols/Video.png"
+import book from "../../../Assets/Module Symbols/Book.png"
+import quiz from "../../../Assets/Module Symbols/Quiz.png"
 import Class from "../Class";
 
 const meta: Meta<typeof Module> ={

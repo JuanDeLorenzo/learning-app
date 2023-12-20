@@ -1,10 +1,10 @@
 import {Meta, StoryObj} from "@storybook/react";
 import Input from "./index";
 import React from "react";
-import pen from '../../Assets/EditPen.png'
-import filter from '../../Assets/Filter.png'
-import search from '../../Assets/Search.png'
-import crossEye from '../../Assets/NoVisible.png'
+import pen from '../../Assets/Text Field Symbols/EditPen.png'
+import filter from '../../Assets/Text Field Symbols/Filter.png'
+import search from '../../Assets/Text Field Symbols/Search.png'
+import crossEye from '../../Assets/Text Field Symbols/NoVisible.png'
 
 const meta: Meta<typeof Input> ={
     title:'Text Input',

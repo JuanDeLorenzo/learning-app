@@ -6,10 +6,10 @@ const messageVariant = cva(['w-36 sm:w-fit','rounded-lg '],{
     variants:{
         variant:{
             user:[
-                'bg-blue-send rounded-full min-w-[157.50px] h-auto relative shadow py-1 px-2 text-medium flex-col inline-flex text-white-pure',
+                'bg-message-user rounded-full min-w-[157.50px] h-auto relative shadow py-1 px-2 text-medium flex-col inline-flex text-typography-400',
             ],
             another:[
-                'bg-primary-anotherText text-black-pure rounded-full min-w-[157.50px] h-auto relative shadow py-1 px-2 text-medium flex-col inline-flex text-left',
+                'bg-greyscale-400 text-typography-600 rounded-full min-w-[157.50px] h-auto relative shadow py-1 px-2 text-medium flex-col inline-flex text-left',
             ]
         }
     },
@@ -33,12 +33,12 @@ const Message = ({variant, status='sent', sender="Somebody", message="Hello", ho
         <div className="flex items-center">
             {isUserVariant ?
                 <>
-                    <p className="text-left text-medium pr-5 pt-1 text-[15px] font-normal font-['Kumbh Sans']">{message}</p>
+                    <p className="text-left text-medium pr-5 pt-1 text-label font-label">{message}</p>
                 </> :
                 <>
                     <div className="flex-col items-center">
-                        <p className="pr-5 font-bold text-[15px] font-['Kumbh Sans']"><u>{sender}</u></p>
-                        <p className="pr-5 font-normal text-[15px] font-['Kumbh Sans']">{message}</p>
+                        <p className="pr-5 text-label font-label"><u>{sender}</u></p>
+                        <p className="pr-5 text-label font-label">{message}</p>
                     </div>
                 </>
             }
@@ -50,33 +50,33 @@ const Message = ({variant, status='sent', sender="Somebody", message="Hello", ho
                     <div>
                         {status === 'read' ?
                             <div>
-                                <p className="text-green-progress text-left">✓✓</p>
+                                <p className="text-message-read text-label font-label text-left">✓✓</p>
                             </div>
                             :
                             <div></div>
                         }
                         {status === 'sent' ?
                             <div>
-                                <p className="text-left">✓</p>
+                                <p className="text-left text-label font-label">✓</p>
                             </div>
                             :
                             <div></div>
                         }
                         {status === 'received' ?
                             <div>
-                                <p className="text-left">✓✓</p>
+                                <p className="text-left text-label font-label">✓✓</p>
                             </div>
                             :
                             <div></div>
                         }
                     </div>
-                    <p className="text-right text-xs font-normal font-['Kumbh Sans']">{hour}</p>
+                    <p className="text-right text-labelXS font-labelXS">{hour}</p>
                 </div>
             </>
             :
             <>
                 <div>
-                    <p className="text-right pb-1 text-xs font-normal font-['Kumbh Sans']">{hour}</p>
+                    <p className="text-right pb-1 text-labelXS font-labelXS">{hour}</p>
                 </div>
             </>
         }

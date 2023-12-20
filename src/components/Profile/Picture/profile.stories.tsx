@@ -1,7 +1,7 @@
 import {Meta, StoryObj} from "@storybook/react";
 import Profile from "./index";
 import React from "react";
-import profile from "../../../Assets/Avatar.png"
+import profile from "../../../Assets/Profile Symbols/Avatar2.png"
 
 const meta: Meta<typeof Profile> ={
     title:'Profile Picture',
@@ -20,6 +20,6 @@ export const Default: Story = {
 
 export const Avatar: Story = {
     name:'Avatar',
-    render: (args) => <Profile image={profile} {...args}>
+    render: (args) => <Profile image={profile} name={"Ignacio"} {...args}>
     </Profile>
 }

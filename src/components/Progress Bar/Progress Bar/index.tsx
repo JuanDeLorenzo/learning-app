@@ -14,8 +14,8 @@ const Progress = ({classes=3, position=1,...rest}:PointerProps) => {
         distance = ((position-1) * (264/(classes-1)));
     }
     return <div className="items-center flex">
-    <div className="h-[3px] rounded-[49.37px] bg-primary-marker relative" style={{ width: `272px` }}>
-        <div className="h-[3px] absolute rounded-[49.37px] bg-pink-marker top-0" style={{ width: `${distance}px` }}></div>
+    <div className="h-[3px] rounded-[49.37px] bg-greyscale-800 relative" style={{ width: `272px` }}>
+        <div className="h-[3px] absolute rounded-[49.37px] bg-secondary-400 top-0" style={{ width: `${distance}px` }}></div>
         <div className="flex justify-between items-center absolute w-full -mt-3 px-2">
             {[...Array(classes)].map((_, i) => {
                 if (i+1 < position) {

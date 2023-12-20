@@ -5,13 +5,13 @@ const pointerVariant = cva([],{
     variants:{
         variant:{
             unreached:[
-                'bg-primary-marker rounded-full h-5 w-5 flex items-center justify-center text-primary-marker',
+                'bg-greyscale-800 rounded-full h-5 w-5 flex items-center justify-center text-primary-marker',
             ],
             reached:[
-                'bg-pink-marker rounded-full h-5 w-5 flex items-center justify-center text-pink-marker',
+                'bg-secondary-400 rounded-full h-5 w-5 flex items-center justify-center text-pink-marker',
             ],
             doing:[
-                'bg-pink-marker rounded-full h-7 w-7 flex items-center justify-center text-pink-marker',
+                'bg-secondary-400 rounded-full h-7 w-7 flex items-center justify-center text-pink-marker',
             ]
         }
     },
@@ -25,9 +25,9 @@ export interface PointerProps extends ButtonHTMLAttributes<HTMLButtonElement>, V
 }
 
 const Marker = ({variant,...rest}:PointerProps) => {
-    return <button className={pointerVariant({variant})} {...rest}>
-        1
-    </button>
+    return <div className={pointerVariant({variant})}>
+
+        </div>
 }
 
 export default Marker

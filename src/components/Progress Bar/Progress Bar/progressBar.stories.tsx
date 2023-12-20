@@ -1,7 +1,6 @@
 import {Meta, StoryObj} from "@storybook/react";
 import Progress from "./index";
 import React from "react";
-import Marker from "../Markers";
 
 const meta: Meta<typeof Progress> ={
 

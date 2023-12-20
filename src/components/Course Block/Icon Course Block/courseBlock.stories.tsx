@@ -9,7 +9,7 @@ const meta: Meta<typeof Block> ={
     tags: ['autodocs'],
     argTypes:{
         variant:{
-            options:['classic','white', 'search'],
+            options:['classic','search'],
             control:{type:'select'},
             defaultValue:'classic'
         }
@@ -28,11 +28,6 @@ export const Default: Story = {
 export const ClassicBlock: Story = {
     name:'Classic Course Block',
     render: (args) => <Block {...args} picture={cooking} course={"Cooking 101"} classes={12} rating={4.5} users={120}></Block>
-}
-
-export const White: Story = {
-    name:'White Course Block',
-    render: (args) => <Block variant={'white'} {...args} picture={cooking} course={"Cooking 101"} classes={12} rating={4.5} users={120}></Block>
 }
 
 export const SearchBlock: Story = {

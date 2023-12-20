@@ -1,54 +1,43 @@
 import React, {ReactNode} from 'react'
-import {cva, VariantProps} from "class-variance-authority";
-import home from "../../Assets/Home.png"
-import homeBlack from "../../Assets/HomeSelected.png"
-import courses from "../../Assets/Courses.png"
-import coursesBlack from "../../Assets/CoursesSelected.png"
-import messages from "../../Assets/Messages.png"
-import messagesBlack from "../../Assets/MessagesSelected.png"
+import home from "../../Assets/Bottom Navbar Symbols/Home.png"
+import homeBlack from "../../Assets/Bottom Navbar Symbols/HomeSelected.png"
+import courses from "../../Assets/Bottom Navbar Symbols/Courses.png"
+import coursesBlack from "../../Assets/Bottom Navbar Symbols/CoursesSelected.png"
+import messages from "../../Assets/Bottom Navbar Symbols/Messages.png"
+import messagesBlack from "../../Assets/Bottom Navbar Symbols/MessagesSelected.png"
 
-const barVariant = cva(['rounded-lg '],{
-    variants:{
-        variant:{
-            classic:[
-                'bg-white-pure px-4 py-2 text-primary-800 flex justify-between',
-            ],
-        }
-    },
-    defaultVariants:{
-        variant:'classic',
-    }
-})
-
-export interface BarProps extends VariantProps<typeof barVariant> {
+export interface BarProps{
     children?: ReactNode;
     house?: boolean;
     course?: boolean;
     message?: boolean;
 }
 
-const BottomBar = ({variant, house = true, course = false, message = false, ...rest}:BarProps) => {
-    return <div className={barVariant({variant})} {...rest}>
-        <div className="flex flex-col items-center px-4 text-small">
+const BottomBar = ({house = true, course = false, message = false, ...rest}:BarProps) => {
+    return <div className="bg-primary-400 w-full px-9 py-2 text-labelXS font-labelXS text-typography-600 flex justify-between">
+        <div>
             <button className="items-center">
                 {house? <img src={homeBlack} alt="Square Button" className="w-12 h-12" />:
                     <img src={home} alt="Square Button" className="w-12 h-12" />}
-                Home
             </button>
+            <br/>
+            Home
         </div>
-        <div className="flex flex-col items-center px-10 text-small">
-            <button className="items-center">
+        <div className="items-center">
+            <button className="pl-4">
                 {course? <img src={coursesBlack} alt="Square Button" className="w-12 h-12" /> :
                     <img src={courses} alt="Square Button" className="w-12 h-12" />}
-                Courses
             </button>
+            <br/>
+            My Courses
         </div>
-        <div className="flex flex-col items-center px-4 text-small">
-            <button className="items-center">
+        <div className="items-center">
+            <button className="pl-2">
                 {message? <img src={messagesBlack} alt="Square Button" className="w-12 h-12" /> :
                     <img src={messages} alt="Square Button" className="w-12 h-12" />}
-                Messages
             </button>
+            <br/>
+            Messages
         </div>
     </div>
 }

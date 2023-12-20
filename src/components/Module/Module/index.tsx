@@ -7,7 +7,7 @@ const classVariant = cva([],{
     variants:{
         variant:{
             standard:[
-                'w-[348px] h-[278px] py-[7px] bg-white-class rounded-3xl flex-col justify-center items-center inline-flex font-[\'Kumbh Sans\']'
+                'w-auto h-[278px] py-[7px] bg-greyscale-200 rounded-3xl flex-col justify-center items-center inline-flex'
             ]
         }
     },
@@ -32,9 +32,9 @@ const Module = ({variant, title="Title", components="0 videos, 0 lectures, 0 qui
             :
             <></>
         }
-        <div className="w-[348px] h-[66px] px-[15px] py-[7px] flex-col justify-center items-start gap-px flex">
-            <div className="text-black-pure text-xl font-semibold">{title}</div>
-            <div className="text-primary-blockText text-sm font-normal">{components}</div>
+        <div className="w-full h-[66px] px-[15px] py-[7px] flex-col justify-center items-start gap-px flex">
+            <div className="text-typography-600 text-body font-body">{title}</div>
+            <div className="text-typography-500 text-labelXS font-labelXS">{components}</div>
         </div>
         <div className="flex-col justify-center items-center gap-[3px] flex">
             {classList.map((classItem, index) => (

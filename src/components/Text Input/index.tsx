@@ -5,19 +5,19 @@ const inputVariant = cva([],{
     variants:{
         variant:{
             search:[
-                'w-[269px] h-[50px] p-2.5 bg-white-input text-primary-input text-stone-500 text-[15px] font-medium font-[\'SF Pro Display\'] rounded-3xl shadow justify-start items-center gap-2.5 inline-flex',
+                'w-full h-[50px] p-2.5 bg-greyscale-200 text-primary-input text-typography-500 text-label font-label rounded-3xl shadow justify-start items-center gap-2.5 inline-flex',
             ],
             data:[
-                'w-[329px] h-[56.57px] p-2.5 rounded-lg border border-primary-data justify-start items-center inline-flex text-center text-primary-data text-lg font-normal font-[\'Kumbh Sans\']'
+                'w-full h-[56.57px] p-2.5 rounded-lg border border-typography-500 justify-start items-center inline-flex text-center text-typography-500 text-body font-body'
             ],
             error:[
-                'w-[329px] h-[56.57px] p-2.5 rounded-lg border border-red-error justify-start items-center inline-flex text-center text-primary-data text-lg font-normal font-[\'Kumbh Sans\']'
+                'w-full h-[56.57px] p-2.5 rounded-lg border border-answer-error justify-start items-center inline-flex text-center text-typography-500 text-body font-body'
             ],
             profile:[
-                'w-[308px] h-[47px] px-2.5 py-[3px] bg-primary-edit bg-opacity-10 rounded-2xl justify-start items-center gap-3.5 inline-flex text-black-pure text-[17px] font-normal font-[\'Kumbh Sans\'] leading-snug'
+                'w-full h-[47px] px-2.5 py-[3px] bg-greyscale-600 bg-opacity-50 rounded-2xl justify-start items-center gap-3.5 inline-flex text-typography-600 text-label font-label leading-snug'
             ],
             message:[
-                'w-[342.96px] h-[49.57px] pl-[16.19px] pr-[15.17px] pt-[6.07px] pb-[5.06px] bg-white-pure rounded-[48px] justify-center items-center inline-flex text-black-pure text-xl font-normal font-[\'Kumbh Sans\']'
+                'w-full h-[49.57px] pl-[16.19px] pr-[15.17px] pt-[6.07px] pb-[5.06px] bg-greyscale-200 rounded-[48px] justify-center items-center inline-flex text-typography-600 text-body font-body'
             ]
         }
     },
